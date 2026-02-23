@@ -1,182 +1,173 @@
+# 📘 Placement & Internship Tracking System  
+### 👥 DBMS Group Project
 
-📘 Placement & Internship Tracking System
-👥 DBMS Group Project
-📌 Project Overview
+---
 
-The Placement & Internship Tracking System is a Database Management System (DBMS) project designed to manage and track student internship and placement activities efficiently.
+## 📌 Project Overview
 
-This system helps:
+The **Placement & Internship Tracking System** is a Database Management System (DBMS) project designed to manage and track student internship and placement activities efficiently.
 
-🎓 Students apply for internships and placements
+This system allows institutions to:
 
-🏢 Companies post internship and job opportunities
+- Manage student information  
+- Maintain company records  
+- Track internship opportunities  
+- Track placement offers  
+- Monitor application status (Selected / Rejected / Pending)  
 
-📊 Track application status (Selected / Rejected / Pending)
+The database ensures structured data storage, integrity, and efficient retrieval of placement-related information.
 
-📁 Manage placement records in a structured database
+---
 
-🎯 Objectives
+## 🎯 Project Objectives
 
-Design an ER Diagram with proper relationships
+- Design an ER Diagram with 5 entities and 5 attributes each  
+- Convert ER Model into Relational Schema  
+- Implement database using SQL (MySQL)  
+- Apply Primary Key and Foreign Key constraints  
+- Maintain normalization up to Third Normal Form (3NF)  
+- Ensure referential integrity  
 
-Convert ER model into relational schema
+---
 
-Implement database using SQL (MySQL)
+## 🗂 Entities and Attributes
 
-Apply constraints (Primary Key, Foreign Key, Unique, etc.)
+### 1️⃣ Student
+- Student_ID (Primary Key)  
+- Name  
+- Department  
+- Email  
+- CGPA  
 
-Ensure data integrity and normalization
+### 2️⃣ Company
+- Company_ID (Primary Key)  
+- Company_Name  
+- Industry_Type  
+- Location  
+- HR_Contact  
 
-🗂 Entities Used (5 Entities – 5 Attributes Each)
-1️⃣ Student
+### 3️⃣ Internship
+- Internship_ID (Primary Key)  
+- Internship_Role  
+- Duration  
+- Stipend  
+- Company_ID (Foreign Key)  
 
-Student_ID (PK)
+### 4️⃣ Placement
+- Placement_ID (Primary Key)  
+- Job_Role  
+- Package  
+- Placement_Date  
+- Company_ID (Foreign Key)  
 
-Name
+### 5️⃣ Application
+- Application_ID (Primary Key)  
+- Application_Date  
+- Status  
+- Student_ID (Foreign Key)  
+- Company_ID (Foreign Key)  
 
-Department
+---
 
-Email
+## 🔗 Relationships
 
-CGPA
+- A Student applies for Applications (1:M)  
+- An Application is sent to a Company (M:1)  
+- A Company offers Internship (1:M)  
+- A Company offers Placement (1:M)  
 
-2️⃣ Company
+---
 
-Company_ID (PK)
+## 🧱 ER Diagram
 
-Company_Name
+The ER Diagram includes:
 
-Industry_Type
+- Rectangles → Entities  
+- Diamonds → Relationships  
+- Ovals → Attributes  
+- Underlined → Primary Keys  
+- 1:M cardinality relationships  
 
-Location
+(ER diagram image included in the repository)
 
-HR_Contact
+---
 
-3️⃣ Internship
+## 🛠 Technologies Used
 
-Internship_ID (PK)
+- MySQL  
+- SQL  
+- ER Modeling  
+- DBMS Concepts  
+- GitHub  
 
-Internship_Role
+---
 
-Duration
+## 💾 Database Implementation
 
-Stipend
+- All tables created using `CREATE TABLE`
+- Primary Keys defined for each entity
+- Foreign Keys used to maintain relationships
+- Constraints applied to maintain data consistency
+- Database normalized up to 3NF
 
-Company_ID (FK)
+---
 
-4️⃣ Placement
+## 📊 Features
 
-Placement_ID (PK)
+- Student registration management  
+- Company information management  
+- Internship tracking  
+- Placement tracking  
+- Application status monitoring  
+- Data integrity using constraints  
 
-Job_Role
+---
 
-Package
+## 📁 Project Structure
+Placement-Internship-Tracking-System/
+│
+├── README.md
+├── ER_Diagram.png
+├── SQL_Schema.sql
+├── Sample_Data.sql
+└── Project_Report.pdf
 
-Placement_Date
 
-Company_ID (FK)
+---
 
-5️⃣ Application
+## 👥 Group Members
 
-Application_ID (PK)
+- Member 1 – Your Name  
+- Member 2 –  
+- Member 3 –  
+- Member 4 –  
 
-Application_Date
+---
 
-Status
+## 🚀 How to Run
 
-Student_ID (FK)
+1. Install MySQL  
+2. Create a new database  
+3. Execute the SQL schema file  
+4. Insert sample data  
+5. Run SELECT queries to view results  
 
-Company_ID (FK)
+---
 
-🔗 Relationships
+## 📚 Learning Outcomes
 
-A Student applies for Applications (1:M)
+- Understanding ER Diagram design  
+- Converting ER model to relational schema  
+- Writing SQL queries  
+- Applying normalization concepts  
+- Implementing database constraints  
 
-An Application is sent_to Company (M:1)
+---
 
-A Company offers Internship (1:M)
+## 📌 Conclusion
 
-A Company offers Placement (1:M)
+The Placement & Internship Tracking System demonstrates the practical implementation of DBMS concepts in managing real-world placement processes. The system ensures organized data management, consistency, and efficient tracking of internships and placements.
 
-🧱 Database Schema
+---
 
-All tables created using CREATE TABLE
-
-Primary Keys defined for all entities
-
-Foreign Keys implemented for relationships
-
-Cascading rules applied for referential integrity
-
-🛠 Technologies Used
-
-💾 MySQL
-
-📊 ER Diagram (Box & Diamond Style)
-
-🧠 DBMS Concepts (Normalization, Constraints, Relationships)
-
-💻 SQL Queries
-
-📈 Features
-
-✔ Student Registration
-✔ Company Management
-✔ Internship & Placement Tracking
-✔ Application Status Management
-✔ Data Integrity using Constraints
-
-📊 Normalization
-
-✔ 1NF – Atomic attributes
-
-✔ 2NF – No partial dependency
-
-✔ 3NF – No transitive dependency
-
-Database is normalized up to Third Normal Form (3NF).
-
-📂 Project Structure
-📦 Placement-Internship-Tracking-System
- ┣ 📜 README.md
- ┣ 📜 ER_Diagram.png
- ┣ 📜 SQL_Schema.sql
- ┣ 📜 Sample_Data.sql
- ┗ 📜 Project_Report.pdf
-👥 Group Members
-
-Member 1 – Name
-
-Member 2 – Name
-
-Member 3 – Name
-
-Member 4 – Name
-
-(Add your team member names here)
-
-🚀 How to Run
-
-Install MySQL
-
-Create a new database
-
-Run the SQL schema file
-
-Insert sample data
-
-Execute SELECT queries
-
-📚 Learning Outcomes
-
-Practical understanding of ER modeling
-
-Implementation of relational schema
-
-Writing complex SQL queries
-
-Understanding DBMS concepts in real-world scenarios
-
-📌 Conclusion
-
-This project demonstrates how DBMS can be used to manage real-world placement and internship processes efficiently. It improves data organization, tracking, and decision-making within an institution.
+⭐ Thank you for viewing our DBMS Group Project!
