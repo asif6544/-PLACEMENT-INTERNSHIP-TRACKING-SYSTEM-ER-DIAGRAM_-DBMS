@@ -137,9 +137,9 @@ Placement-Internship-Tracking-System/
 ## 👥 Group Members
 
 - Member 1 – MD ASIF
-- Member 2 –  
-- Member 3 –  
-- Member 4 –  
+- Member 2 – Kunal Agratam
+- Member 3 – Manish Singh 
+- Member 4 – Manas
 
 ---
 
