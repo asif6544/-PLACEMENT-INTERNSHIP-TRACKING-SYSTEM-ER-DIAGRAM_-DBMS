@@ -125,19 +125,18 @@ The ER Diagram includes:
 
 ## 📁 Project Structure
 Placement-Internship-Tracking-System/
-│
-├── README.md
-├── ER_Diagram.png
-├── SQL_Schema.sql
-├── Sample_Data.sql
-└── Project_Report.pdf
+/README.md
+  ER_Diagram.png
+  SQL_Schema.sql
+  Sample_Data.sql
+  Project_Report.pdf
 
 
 ---
 
 ## 👥 Group Members
 
-- Member 1 – Your Name  
+- Member 1 – MD ASIF
 - Member 2 –  
 - Member 3 –  
 - Member 4 –  
