@@ -1,0 +1,14 @@
+Create Table
+CREATE TABLE Placement_Drive (
+    Drive_ID INT PRIMARY KEY,
+    Company_ID INT,
+    Job_Role VARCHAR(100),
+    Package DECIMAL(10,2),
+    Drive_Date DATE,
+    FOREIGN KEY (Company_ID) REFERENCES Company(Company_ID)
+);
+
+🔹 Insert Sample Data
+INSERT INTO Placement_Drive VALUES
+(301, 201, 'Software Engineer', 600000, '2026-03-10'),
+(302, 202, 'System Engineer', 550000, '2026-03-15');
