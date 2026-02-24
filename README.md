@@ -64,8 +64,8 @@ The database ensures structured data storage, integrity, and efficient retrieval
 - Application_ID (Primary Key)  
 - Application_Date  
 - Status  
-- Student_ID (Foreign Key)  
-- Company_ID (Foreign Key)  
+- Mode_of_Application
+- Student_ID (Foreign Key)
 
 ---
 
