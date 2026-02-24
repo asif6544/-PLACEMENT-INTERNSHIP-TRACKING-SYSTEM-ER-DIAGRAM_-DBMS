@@ -2,18 +2,35 @@
 SELECT * FROM Student;
 🔹 2. Students with CGPA > 8
 SELECT * FROM Student WHERE CGPA > 8;
-🔹 3. Show drives with company name
-SELECT d.Drive_ID, c.Company_Name, d.Job_Role, d.Package
-FROM Placement_Drive d
-JOIN Company c ON d.Company_ID = c.Company_ID;
+🔹 3. Show placements with company name
+SELECT p.Placement_ID, c.Company_Name, p.Job_Role, p.Package
+FROM Placement p
+JOIN Company c ON p.Company_ID = c.Company_ID;
 🔹 4. Show student applications with status
-SELECT s.Name, d.Job_Role, a.Status
+SELECT s.Name, a.Mode_of_Application, a.Status
+FROM Application a
+JOIN Student s ON a.Student_ID = s.Student_ID;
+🔹 5. Show shortlisted students
+SELECT s.Name, a.Status
 FROM Application a
 JOIN Student s ON a.Student_ID = s.Student_ID
-JOIN Placement_Drive d ON a.Drive_ID = d.Drive_ID;
-🔹 5. Show accepted offers
-SELECT s.Name, c.Company_Name, o.Salary
-FROM Offer o
-JOIN Student s ON o.Student_ID = s.Student_ID
-JOIN Company c ON o.Company_ID = c.Company_ID
-WHERE o.Offer_Status = 'Accepted';
+WHERE a.Status = 'Shortlisted';
+🔹 6. Show internships with company name
+SELECT i.Internship_ID, c.Company_Name, i.Internship_Role, i.Stipend
+FROM Internship i
+JOIN Company c ON i.Company_ID = c.Company_ID;
+🔹 7. Show internships with stipend greater than 10000
+SELECT Internship_Role, Stipend
+FROM Internship
+WHERE Stipend > 10000;
+🔹 8. Show highest placement package
+SELECT MAX(Package) AS Highest_Package
+FROM Placement;
+🔹 9. Count total students in each department
+SELECT Department, COUNT(*) AS Total_Students
+FROM Student
+GROUP BY Department;
+🔹 10. Show companies in IT Services industry
+SELECT Company_Name, Location
+FROM Company
+WHERE Industry_Type = 'IT Services';
