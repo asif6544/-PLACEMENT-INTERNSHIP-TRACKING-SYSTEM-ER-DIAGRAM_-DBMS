@@ -2,10 +2,13 @@
 CREATE TABLE Application (
     Application_ID INT PRIMARY KEY,
     Student_ID INT,
+    Internship_ID INT,
     Mode_of_Application VARCHAR(30),
     Application_Date DATE,
     Status VARCHAR(20),
-    FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID)
+
+    FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID),
+    FOREIGN KEY (Internship_ID) REFERENCES Internship(Internship_ID)
 );
 🔹 Insert Sample Data
 INSERT INTO Application VALUES
