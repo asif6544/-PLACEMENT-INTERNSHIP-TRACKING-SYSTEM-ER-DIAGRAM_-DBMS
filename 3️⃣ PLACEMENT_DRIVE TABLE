@@ -9,6 +9,6 @@ CREATE TABLE Placement (
 );
 
 🔹 Insert Sample Data
-INSERT INTO Placement_Drive VALUES
+INSERT INTO Placement VALUES
 (301, 201, 'Software Engineer', 600000, '2026-03-10'),
 (302, 202, 'System Engineer', 550000, '2026-03-15');
