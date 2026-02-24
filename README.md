@@ -85,8 +85,8 @@ The ER Diagram includes:
 - Rectangles → Entities  
 - Diamonds → Relationships  
 - Ovals → Attributes  
-- Underlined → Primary Keys  
-- 1:M cardinality relationships  
+- 1:M cardinality relationships
+- M:1 cardinality relationships 
 
 (ER diagram image included in the repository)
 
