@@ -12,6 +12,6 @@ CREATE TABLE Application (
 );
 🔹 Insert Sample Data
 INSERT INTO Application VALUES
-(401, 101, 'Online', '2026-02-25', 'Applied'),
-(402, 102, 'Campus', '2026-02-26', 'Shortlisted'),
-(403, 103, 'Refferal', '2026-02-27', 'Applied');
+(401, 101, 9001, 'Online', '2026-02-25', 'Applied'),
+(402, 102, 9002, 'Campus', '2026-02-26', 'Shortlisted'),
+(403, 103, 9003, 'Referral', '2026-02-27', 'Applied');
