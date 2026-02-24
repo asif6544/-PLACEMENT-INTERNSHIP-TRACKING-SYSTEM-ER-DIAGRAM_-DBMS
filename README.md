@@ -72,7 +72,7 @@ The database ensures structured data storage, integrity, and efficient retrieval
 ## 🔗 Relationships
 
 - A Student applies for Applications (1:M)  
-- An Application is sent to a Company (M:1)  
+- An Application is sent for an internship (M:1)
 - A Company offers Internship (1:M)  
 - A Company offers Placement (1:M)  
 
