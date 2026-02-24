@@ -2,14 +2,13 @@
 CREATE TABLE Application (
     Application_ID INT PRIMARY KEY,
     Student_ID INT,
-    Drive_ID INT,
-    Applied_Date DATE,
+    Mode_of_Application VARCHAR(30),
+    Application_Date DATE,
     Status VARCHAR(20),
-    FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID),
-    FOREIGN KEY (Drive_ID) REFERENCES Placement_Drive(Drive_ID)
+    FOREIGN KEY (Student_ID) REFERENCES Student(Student_ID)
 );
 🔹 Insert Sample Data
 INSERT INTO Application VALUES
-(401, 101, 301, '2026-02-25', 'Applied'),
-(402, 102, 301, '2026-02-26', 'Shortlisted'),
-(403, 103, 302, '2026-02-27', 'Applied');
+(401, 101, 'Online', '2026-02-25', 'Applied'),
+(402, 102, 'Campus', '2026-02-26', 'Shortlisted'),
+(403, 103, 'Refferal', '2026-02-27', 'Applied');
