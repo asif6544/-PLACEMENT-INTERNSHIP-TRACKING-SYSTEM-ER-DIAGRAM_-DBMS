@@ -1,10 +1,10 @@
 Create Table
-CREATE TABLE Placement_Drive (
-    Drive_ID INT PRIMARY KEY,
+CREATE TABLE Placement (
+    Placement_ID INT PRIMARY KEY,
     Company_ID INT,
     Job_Role VARCHAR(100),
     Package DECIMAL(10,2),
-    Drive_Date DATE,
+    Placement_Date DATE,
     FOREIGN KEY (Company_ID) REFERENCES Company(Company_ID)
 );
 
