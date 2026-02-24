@@ -2,9 +2,9 @@
 CREATE TABLE Company (
     Company_ID INT PRIMARY KEY,
     Company_Name VARCHAR(100),
-    Industry VARCHAR(50),
+    Industry_Type VARCHAR(50),
     Location VARCHAR(100),
-    HR_Email VARCHAR(100)
+    HR_Contact VARCHAR(100)
 );
 🔹 Insert Sample Data
 INSERT INTO Company VALUES
