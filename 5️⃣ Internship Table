@@ -9,6 +9,6 @@ CREATE TABLE Internship (
         ON DELETE CASCADE
 );
 INSERT INTO Internship VALUES
-(9001, 102, 'Web Developer Intern', 6, 15000),
-(9002, 103, 'Embedded Systems Intern', 3, 10000),
-(9003, 101, 'Mechanical Design Intern', 2, 9000);
+(9001, 202, 'Web Developer Intern', 6, 15000),
+(9002, 203, 'Embedded Systems Intern', 3, 10000),
+(9003, 201, 'Mechanical Design Intern', 2, 9000);
