@@ -11,4 +11,4 @@ CREATE TABLE Internship (
 INSERT INTO Internship VALUES
 (9001, 102, 'Web Developer Intern', 6, 15000),
 (9002, 103, 'Embedded Systems Intern', 3, 10000),
-(9003, 101, 'Mechanical Design Intern', 2, 8000);
+(9003, 101, 'Mechanical Design Intern', 2, 9000);
