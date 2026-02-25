@@ -1,6 +1,6 @@
 Create Table
 CREATE TABLE Placement (
-    Placement_ID INT PRIMARY KEY,
+    Placement_id INT PRIMARY KEY,
     Company_ID INT,
     Job_Role VARCHAR(100),
     Package DECIMAL(10,2),
