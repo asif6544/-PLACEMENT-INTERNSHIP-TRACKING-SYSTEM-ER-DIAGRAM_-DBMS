@@ -4,7 +4,7 @@ CREATE TABLE Company (
     Company_Name VARCHAR(150),
     Industry_Type VARCHAR(100),
     Location VARCHAR(100),
-    HR_Contact VARCHAR(100)
+    HR_Contact VARCHAR(150)
 );
 🔹 Insert Sample Data
 INSERT INTO Company VALUES
