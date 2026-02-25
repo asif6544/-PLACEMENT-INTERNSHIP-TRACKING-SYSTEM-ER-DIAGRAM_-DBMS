@@ -169,4 +169,4 @@ The Placement & Internship Tracking System demonstrates the practical implementa
 
 ---
 
-⭐ Thank you !
+⭐ Thank you.
