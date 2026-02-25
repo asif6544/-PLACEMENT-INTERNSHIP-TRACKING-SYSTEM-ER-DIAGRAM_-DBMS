@@ -1,8 +1,8 @@
 🔹 Create Table
 CREATE TABLE Company (
     Company_ID INT PRIMARY KEY,
-    Company_Name VARCHAR(100),
-    Industry_Type VARCHAR(50),
+    Company_Name VARCHAR(150),
+    Industry_Type VARCHAR(100),
     Location VARCHAR(100),
     HR_Contact VARCHAR(100)
 );
