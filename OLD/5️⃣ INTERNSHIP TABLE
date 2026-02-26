@@ -1,15 +1,13 @@
 CREATE TABLE Internship (
-    Internship_id INT PRIMARY KEY,
-    Company_id INT NOT NULL,
-    Internship_role VARCHAR(100),
+    Internship_ID INT PRIMARY KEY,
+    Company_ID INT,
+    Internship_Role VARCHAR(100),
+    Duration INT,
     Stipend DECIMAL(10,2),
-    Duration VARCHAR(50),
 
-    FOREIGN KEY (company_id)
-        REFERENCES Company(company_id)
+    FOREIGN KEY (Company_ID) REFERENCES Company(Company_ID)
         ON DELETE CASCADE
 );
-
 INSERT INTO Internship VALUES
 (9001, 202, 'Web Developer Intern', 6, 15000),
 (9002, 203, 'Embedded Systems Intern', 3, 10000),

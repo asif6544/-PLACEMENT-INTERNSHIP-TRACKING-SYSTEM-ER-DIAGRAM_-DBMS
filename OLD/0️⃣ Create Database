@@ -1,0 +1,9 @@
+SHOW DATABASES;
+
+DROP DATABASE IF EXISTS Placement_Internship_System;
+
+CREATE DATABASE Placement_Internship_System;
+
+USE Placement_Internship_System;
+
+SHOW TABLES;

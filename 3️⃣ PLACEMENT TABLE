@@ -1,11 +1,19 @@
 Create Table
 CREATE TABLE Placement (
     Placement_id INT PRIMARY KEY,
-    Company_ID INT,
-    Job_Role VARCHAR(100),
-    Package DECIMAL(10,2),
-    Placement_Date DATE,
-    FOREIGN KEY (Company_ID) REFERENCES Company(Company_ID)
+    Student_id INT NOT NULL,
+    Internship_id INT NOT NULL,
+    Status VARCHAR(50),
+    Date_of_selection DATE,
+    Final_result VARCHAR(50),
+
+    FOREIGN KEY (student_id)
+        REFERENCES Student(student_id)
+        ON DELETE CASCADE,
+
+    FOREIGN KEY (internship_id)
+        REFERENCES Internship(internship_id)
+        ON DELETE CASCADE
 );
 
 🔹 Insert Sample Data
