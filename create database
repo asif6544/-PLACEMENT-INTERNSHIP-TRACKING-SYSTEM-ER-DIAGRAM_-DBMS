@@ -81,3 +81,69 @@ CREATE TABLE Interview (
 -- =========================================
 -- End of File
 -- =========================================
+
+
+
+
+Here are the SQL queries showing relationships (JOIN queries) between all related tables in your database.
+
+🔗 1️⃣ Student ↔ Placement ↔ Internship ↔ Company
+✅ Show which student got placed in which company
+SELECT 
+    s.Student_ID,
+    s.Name AS Student_Name,
+    c.Company_Name,
+    i.Internship_Role,
+    p.Final_Result
+FROM Student s
+JOIN Placement p ON s.Student_ID = p.Student_ID
+JOIN Internship i ON p.Internship_ID = i.Internship_ID
+JOIN Company c ON i.Company_ID = c.Company_ID;
+🔗 2️⃣ Student ↔ Placement
+✅ Show all placements of a particular student
+SELECT 
+    s.Name,
+    p.Placement_ID,
+    p.Status,
+    p.Final_Result
+FROM Student s
+JOIN Placement p ON s.Student_ID = p.Student_ID
+WHERE s.Student_ID = 1;
+🔗 3️⃣ Company ↔ Internship
+✅ Show all internships offered by each company
+SELECT 
+    c.Company_Name,
+    i.Internship_ID,
+    i.Internship_Role,
+    i.Stipend
+FROM Company c
+JOIN Internship i ON c.Company_ID = i.Company_ID;
+🔗 4️⃣ Placement ↔ Interview
+✅ Show interview rounds for each placement
+SELECT 
+    p.Placement_ID,
+    s.Name,
+    intr.Interview_Date,
+    intr.Round_Type,
+    intr.Result
+FROM Placement p
+JOIN Student s ON p.Student_ID = s.Student_ID
+JOIN Interview intr ON p.Placement_ID = intr.Placement_ID;
+🔗 5️⃣ Full Relationship Query (All Tables)
+✅ Complete detailed report
+SELECT 
+    s.Name AS Student_Name,
+    s.Department,
+    s.CGPA,
+    c.Company_Name,
+    i.Internship_Role,
+    i.Stipend,
+    p.Status,
+    p.Final_Result,
+    intr.Round_Type,
+    intr.Result AS Interview_Result
+FROM Student s
+JOIN Placement p ON s.Student_ID = p.Student_ID
+JOIN Internship i ON p.Internship_ID = i.Internship_ID
+JOIN Company c ON i.Company_ID = c.Company_ID
+LEFT JOIN Interview intr ON p.Placement_ID = intr.Placement_ID;
