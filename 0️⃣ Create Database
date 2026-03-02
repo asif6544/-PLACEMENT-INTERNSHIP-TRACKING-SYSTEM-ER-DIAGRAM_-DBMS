@@ -1,9 +1,0 @@
-SHOW DATABASES;
-
-DROP DATABASE IF EXISTS Internship_Tracking_System;
-
-CREATE DATABASE Internship_Tracking_System;
-
-USE Internship_Tracking_System;
-
-SHOW TABLES;
